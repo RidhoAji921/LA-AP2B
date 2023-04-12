@@ -1,23 +1,14 @@
 {
-    "nama": "Ridho Aji Gumilang",
-    "npm": "51422432",
-    "kelas": "1IA22",
-    "hobi": [
-        "Genshin",
-        "Genshin",
-        "Genshin",
-        "Genshin",
-        "Genshin",
-        "Genshin",
-        "Genshin",
-        "Mengaji",
-        "Shalat",
-        "Genshin",
-        "Genshin",
-        "Genshin",
-        "tidur",
-        "Genshin",
-        "Genshin",
-        "Genshin"
+    "users": [
+        {
+            "nama": "Ridho Aji Gumilang",
+            "npm": "51422432",
+            "kelas": "1IA22",
+            "hobi": [
+                "Ngoding",
+                "Turu",
+                "Ngegame"
+            ]
+        }
     ]
 }

@@ -9,5 +9,3 @@ if response.status_code == 200:
     print(data)
 else:
     print("ERROR: ", response.status_code)
-
-#output di web dan output python dua duanya harus sama
