@@ -7,11 +7,6 @@ def salah(tipe, angka):
 def benar(tipe, angka):
     return f"Anda benar, angka {angka} adalah angka {tipe}"
 
-
-@app.route('/')
-def main():
-    return "angka"
-
 @app.route('/genap/<int:angka>')
 def genap(angka):
     if(angka % 2 == 0):
