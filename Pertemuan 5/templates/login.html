@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login_style.css') }}">
+    <!-- <link rel="stylesheet" href="../static/login_style.css"> -->
+    <title>Login</title>
+</head>
+<body>
+    <div id="bg-banner"></div>
+    <main>
+        <section id="anime"></section>
+        <section id="login">
+            <h1>Anime Side.</h1>
+            <h3>Login</h3>
+            
+            <form action="{{ url_for('login') }}" method="post">
+                <div id="inputText">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+                    <label for="username">Password:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <input type="submit" value="Login">
+            </form>
+            <a href="#" id="lupaPass">Lupa password</a>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Karla:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: grid;
+    grid-template-areas: 'anime login';
+    grid-template-columns: 60% 40%;
+    z-index: 4;
+}
+
+#bg-banner{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("anime.jpg");
+    background-repeat: repeat;
+    animation: mover 5s linear infinite;
+    position: absolute;
+    z-index: 1;
+}
+
+#anime{
+    grid-area: anime;
+    display: flex;
+    height: 100vh;
+    z-index: 4;
+    box-shadow: 0 0 500px rgba(0,0,0,0.9) inset;
+}
+
+#login{
+    background-color: rgb(34, 34, 34);
+    grid-area: login;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    padding: 0 4% 0 4%;
+    z-index: 4;
+}
+
+#login h1{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 2em;
+    margin-top: 5%;
+}
+
+#login h3{
+    margin-top: 40px;
+    font-family: 'Karla', sans-serif;
+    color: white;
+    font-size: 1.7em;
+}
+
+#login form{
+    display: flex;
+    flex-flow: column;
+    height: 50%;
+    margin: 5% 0 5% 0;
+}
+
+#login #inputText{
+    display: flex;
+    flex-flow: column;
+    height: 70px;
+    justify-content: space-between;
+}
+
+#login #inputText label{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#login #inputText input{
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+#login input[type="submit"]{
+    display: block;
+    margin-top: 50%;
+    width: 45%;
+    align-self: center;
+    border-radius: 10px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    padding: 2px;
+    transition: 0.1s;
+}
+
+#login input[type="submit"]:hover{
+    background-color: rgb(175, 175, 175);
+    transition: 0.1s;
+}
+
+#lupaPass{
+    display: flex;
+    color: rgb(255, 255, 255);
+    margin-top: 3vh;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    align-self: center;
+    transition: 0.1s;
+}
+
+#lupaPass:hover{
+    color: rgb(175, 175, 175);
+    transition: 0.1s;
+}
+
+@keyframes mover {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-40vw); }
+}

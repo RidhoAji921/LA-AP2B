@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard_style.css') }}">
+    <!-- <link rel="stylesheet" href="../static/dashboard_style.css"> -->
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav>
+        <h2>Anime Side.</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Anime</a></li>
+            <li><a href="#">Favorites</a></li>
+            <li><a href="#">User</a></li>
+        </ul>
+    </nav>
+    <section id="top">
+        <section id="top-desc">
+            <p>Ngobrol bahas anime sesama wibu, cari teman nge-<i>wibu</i>-mu di sini!</p>
+        </section>
+        <section id="top-img">
+            <!-- <img src="../static/popular-anime-characters.jpg"> -->
+            <img src="{{ url_for('static', filename='popular-anime-characters.jpg') }}">
+        </section>
+    </section>
+    <section id="tombol">
+        <button>JELAJAHI!!!</button>
+    </section>
+    <main>
+        <div class="konten">
+            <img src="{{ url_for('static', filename='k-on-premium-header-1.jpg') }}">
+            <div class="contentDesc">
+                <h4>Apakah Serial Manga/Anime K-On Akan Berlanjut ke Season 3?</h4>
+                <p>Halo Minna, Ada yang masih berharap season lanjutan K-On?? Jika dilihat dari Manga karya Kakifly ini memang nantinya akan ada seaoson lanjutanya. Manga K-On sendiri dirilis 4 Volume dengan total 57 Chapter, seperti yang kalian tau sudah diadaptasi untuk untuk K-On Seaoson 1 dan 2....</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
